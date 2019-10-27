@@ -55,7 +55,7 @@ void vector(void)
 #define SPM_RDY_Handler()			INT_HANDLER(__vector_20)
 
 
-#define STATUS_REG	(*(volatile unsigned char *)0x59)
+#define STATUS_REG	(*(volatile unsigned char *)0x5F)
 
 #define SEI()	(STATUS_REG |= 0x80)
 #define CLI()	(STATUS_REG &= 0x7F)
